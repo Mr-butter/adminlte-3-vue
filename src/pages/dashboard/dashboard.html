@@ -9,7 +9,9 @@
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item">
-                        <router-link to="/">{{ $t("labels.home") }}</router-link>
+                        <router-link to="/"
+                            >{{ $t("labels.home") }}</router-link
+                        >
                     </li>
                     <li class="breadcrumb-item active">Dashboard v1</li>
                 </ol>
@@ -31,9 +33,9 @@
                 <!-- small box -->
                 <div class="small-box bg-info">
                     <div class="inner">
-                        <h3>150</h3>
+                        <h3 id="btc_value"></h3>
 
-                        <p>New Orders</p>
+                        <p>비트코인 가격정보</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-bag"></i>
@@ -48,9 +50,9 @@
                 <!-- small box -->
                 <div class="small-box bg-success">
                     <div class="inner">
-                        <h3>53<sup style="font-size: 20px">%</sup></h3>
+                        <h3 id="trade_volume"></h3>
 
-                        <p>Bounce Rate</p>
+                        <p>최근 거래량</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-stats-bars"></i>
@@ -65,9 +67,9 @@
                 <!-- small box -->
                 <div class="small-box bg-warning">
                     <div class="inner">
-                        <h3>44</h3>
+                        <h3 id="acc_trade_volume"></h3>
 
-                        <p>User Registrations</p>
+                        <p>누적 거래량</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-person-add"></i>
@@ -82,9 +84,9 @@
                 <!-- small box -->
                 <div class="small-box bg-danger">
                     <div class="inner">
-                        <h3>65</h3>
+                        <h3 id="signed_change_rate"></h3>
 
-                        <p>Unique Visitors</p>
+                        <p>변화율</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-pie-graph"></i>
